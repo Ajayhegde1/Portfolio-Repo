@@ -11,14 +11,18 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
     "animate.css": "^4.1.1",
+    "gsap": "^3.12.3",
     "next": "14.0.3",
     "react": "^18",
+    "react-basic-horizontal-scroll": "^0.1.8",
     "react-bootstrap": "^2.9.1",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18",
     "react-on-screen": "^2.1.1",
     "react-router": "^6.20.1",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-scroll-parallax": "^3.4.5",
+    "react-vertical-timeline-component": "^3.6.0",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

@@ -31,7 +31,7 @@ function ModelCanvas() {
 
   useEffect(() => {});
   return (
-    <div className=" model h-[200px] w-[200px] z-50 fixed ml-[0px] opacity-0">
+    <div className=" model h-[200px] w-[200px] z-10 fixed ml-[0px] opacity-0">
       <Canvas
         camera={{ position: [2, 0, 12.25], fov: 15, zoom: 1.2 }}
         style={{

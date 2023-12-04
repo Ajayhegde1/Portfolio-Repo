@@ -11,6 +11,7 @@ import { Achievements } from "../Components/Achievements";
 import { ScrollExtenderDiv } from "../Components/ScrollExtenderDiv";
 import { Contact } from "../Components/Contact";
 import { ContactBackgroundBlur } from "../Components/ContactBackgroundBlur";
+import { Projects } from "../Components/Projects";
 
 export default function Page() {
   gsap.registerPlugin(ScrollTrigger);
@@ -47,6 +48,7 @@ export default function Page() {
       {/* <Landing /> */}
 
       <Skills />
+      <Projects />
       <ContactBackgroundBlur />
     </>
   );

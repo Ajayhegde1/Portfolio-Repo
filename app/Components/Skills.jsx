@@ -85,8 +85,8 @@ export function Skills() {
   });
   return (
     <>
-      <section className=" bg-gradient-to-t from-[#b2ccf9] to-[#ffffff] h-[100vh] w-screen sticky top-0 z-50 flex justify-evenly">
-        <motdiv className="skillHead absolute ml-[-20px] w-[700px]  opacity-0  mt-[-120px]">
+      <section className=" bg-gradient-to-t from-[#b2ccf9] to-[#ffffff] h-[100vh] w-screen sticky top-0 flex justify-evenly z-50">
+        <div className="skillHead absolute ml-[-20px] w-[700px]  opacity-0  mt-[-120px]">
           <Image
             className="  h-[400px] w-[700px] absolute"
             src={signImg}
@@ -94,7 +94,7 @@ export function Skills() {
           <h1 className="text-white text-center font-[700] text-[80px] pt-[200px] z-50 absolute pl-[215px]">
             SKILLS
           </h1>
-        </motdiv>
+        </div>
         {/* <div className="skillHead h-[120px] w-[300px] bg-red-500  mt-[-150px] opacity-0"></div> */}
         {/* LeftDiv */}
         <div className="leftdiv flex flex-col space-y-[35px] pt-[50px]">
@@ -196,7 +196,7 @@ export function Skills() {
           </motion.div>
         </div>
       </section>
-      <section className="bg-red-500 h-screen w-screen relative animationHelper"></section>
+      <section className="h-[150vh] w-screen relative animationHelper"></section>
     </>
   );
 }
