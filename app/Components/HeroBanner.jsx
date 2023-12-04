@@ -152,7 +152,10 @@ const HeroBanner = () => {
                     data-rotate='[ "FullStack Dev", "Web Designer", "Data Analyst" ]'
                   >
                     <span className="wrap font-[600] text-[60px]">
-                      <p>&lt;/ {text} /&gt;</p>
+                      <p>
+                        {text}
+                        <span className="blink-text">|</span>
+                      </p>
                     </span>
                   </span>
                 </h1>
