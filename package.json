@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "@react-three/drei": "^9.90.0",
+    "@react-three/fiber": "^8.15.12",
     "animate.css": "^4.1.1",
+    "framer-motion": "^10.16.14",
     "gsap": "^3.12.3",
+    "leva": "^0.9.35",
     "next": "14.0.3",
     "react": "^18",
     "react-basic-horizontal-scroll": "^0.1.8",
@@ -22,7 +26,8 @@
     "react-router": "^6.20.1",
     "react-scroll-parallax": "^3.4.5",
     "react-vertical-timeline-component": "^3.6.0",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.1",
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

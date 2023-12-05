@@ -14,7 +14,7 @@ const HeroBanner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["FullStack Dev", "Web Designer", "Data Analyst"];
+  const toRotate = ["FullStack Dev", "Data Analyst", "Web Designer"];
   const period = 2000;
 
   useEffect(() => {
