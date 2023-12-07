@@ -97,10 +97,10 @@ const HeroBanner = () => {
           transition={{ duration: 0.7, delay: 0.25 }}
         >
           <div className="flex items-center gap-[6px]">
-            <div className="w-[35px] h-[35px] rounded-full bg-[#252525] flex justify-center items-center">
-              {/* <img src={gmailIcon} alt="" className="w-[18px]" /> */}
-            </div>
-            <div>muhammadrizwanse23@gmail.com</div>
+            {/* <div className="w-[35px] h-[35px] rounded-full bg-[#252525] flex justify-center items-center"> */}
+            {/* <img src={gmailIcon} alt="" className="w-[18px]" /> */}
+            {/* </div> */}
+            <div></div>
           </div>
           <ul className="flex 2xl:text-[20px]">
             <li
@@ -192,7 +192,7 @@ const HeroBanner = () => {
           >
             {/* START */}
             <div className="flex items-center gap-3">
-              <div className="text-[80px] font-light">10+</div>
+              <div className="text-[80px] font-light">8+</div>
               <div className="leading-[22px]">
                 SUCCESSFULLY
                 <br />
@@ -205,7 +205,7 @@ const HeroBanner = () => {
 
             {/* START */}
             <div className="flex items-center gap-3">
-              <div className="text-[80px] font-light">2+</div>
+              <div className="text-[80px] font-light">1+</div>
               <div className="leading-[22px]">
                 YEARS OF
                 <br />

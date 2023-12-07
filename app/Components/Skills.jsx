@@ -5,14 +5,16 @@ import { motion } from "framer-motion";
 import reactImg from "@/app/assets/sk-11.png";
 import jsImg from "@/app/assets/sk-10.png";
 import cssImg from "@/app/assets/sk-9.png";
-import htmlImg from "@/app/assets/sk-8.png";
+import expressImg from "@/app/assets/ExpressJS.png";
 import pythonImg from "@/app/assets/python.png";
 import mongoImg from "@/app/assets/mongo.png";
 import progImg from "@/app/assets/programmer.svg";
 import nodeImg from "@/app/assets/node.png";
 import signImg from "@/app/assets/sign.svg";
+import nextImg from "@/app/assets/next.webp";
 import matplotlibImg from "@/app/assets/matplotlib.svg";
 import { gsap } from "gsap";
+import pytochImg from "../assets/pytorch.png";
 import { useEffect } from "react";
 const headerSkillVariants = {
   visible: {
@@ -140,7 +142,7 @@ export function Skills() {
             dragElastic={0.1}
             className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
           >
-            <Image src={htmlImg}></Image>
+            <Image src={expressImg}></Image>
           </motion.div>
           <motion.div
             variants={headerSkillVariants}
@@ -193,6 +195,28 @@ export function Skills() {
             className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
           >
             <Image src={matplotlibImg}></Image>
+          </motion.div>
+          <motion.div
+            variants={headerSkillVariants}
+            whileInView="visible"
+            whileHover="hover"
+            drag
+            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+            dragElastic={0.1}
+            className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+          >
+            <Image src={pytochImg}></Image>
+          </motion.div>
+          <motion.div
+            variants={headerSkillVariants}
+            whileInView="visible"
+            whileHover="hover"
+            drag
+            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+            dragElastic={0.1}
+            className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+          >
+            <Image src={nextImg}></Image>
           </motion.div>
         </div>
       </section>

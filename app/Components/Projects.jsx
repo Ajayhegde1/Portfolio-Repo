@@ -11,8 +11,14 @@ import sustifi_static from "../assets/sustifi_static.png";
 import moodview_static from "../assets/moodview.jpg";
 import placifi_static from "../assets/placify_static.png";
 import gitImg from "../assets/github.png";
+import droneGif from "../assets/drone.gif";
+
+import soilGif from "../assets/videsoil.gif";
+import soil_static from "../assets/soil_static.png";
+import dis_static from "../assets/g.png";
+import disPredGif from "../assets/dispred.gif";
 import Image from "next/image";
-import img from "../assets/static.png";
+import drone_static from "../assets/drone_static.jpg";
 import Link from "next/link";
 export function Projects() {
   useEffect(() => {
@@ -40,7 +46,7 @@ export function Projects() {
           Projects
         </h1>
       </div>
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden w-[70vw]">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden w-[70vw] pl-[100px]">
         <motion.div style={{ x }} className="flex gap-[40px]">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
@@ -64,7 +70,9 @@ const Card = ({ card }) => {
           </Link>
         </div>
       </div>
-      <div className="h-[225px]">{card.content}</div>
+      <Link href={`${card.weblink}`}>
+        <div className="h-[225px]">{card.content}</div>
+      </Link>
       <div className="w-full h-[135px] bg-transparent">{card.desc}</div>
     </div>
   );
@@ -76,55 +84,63 @@ const cards = [
     type: "WebDev",
     content: <ProjectAdderDiv staticImg={zeru_static} gifOrVid={zeruGif} />,
     desc: "Bringing Credit Industry into Decentralized Finance World Enabling Zero Collateral Loans to everyone.",
-    gitLink: "",
+    gitLink: "https://github.com/Ajayhegde1/zeru_website.git",
+    weblink: "https://www.zeru.finance/",
   },
   {
     id: 2,
-    type: "WebDev",
-    content: (
-      <ProjectAdderDiv staticImg={sustifi_static} gifOrVid={sustifiGif} />
-    ),
-    desc: "An AI Driven SaaS platform designed to help companies move to sustainable packaging",
-    gitLink: "",
-  },
-  {
-    id: 3,
     type: "WebDev",
     content: (
       <ProjectAdderDiv staticImg={placifi_static} gifOrVid={placifyGif} />
     ),
     desc: "An intelligent and automated campus placements management platform to connect corporates, universities and students",
     gitLink: "",
+    weblink: "https://placify.io/",
+  },
+  {
+    id: 3,
+    type: "WebDev",
+    content: (
+      <ProjectAdderDiv staticImg={sustifi_static} gifOrVid={sustifiGif} />
+    ),
+    desc: "An AI Driven SaaS platform designed to help companies move to sustainable packaging",
+    gitLink: "https://github.com/Ajayhegde1/sustifi_website.git",
+    weblink: "https://sustifi.co/",
   },
 
   {
     id: 4,
     type: "ML/AI",
-    content: (
-      <ProjectAdderDiv staticImg={moodview_static} gifOrVid={moodViewGif} />
-    ),
-    desc: "MoodView Analytics for indulging in real-time sentiment analysis and elevating Learning Audience engagement to new heights.",
-    gitLink: "",
+    content: <ProjectAdderDiv staticImg={soil_static} gifOrVid={soilGif} />,
+    desc: "MLP based Soil Analytical Model for Precision farming, with multi-spectral analysis and MLP algorithms, providing NPK insights of the soil",
+
+    gitLink: "https://github.com/Ajayhegde1/Soil-Analytics-ML-Model.git",
+    weblink: "https://github.com/Ajayhegde1/Soil-Analytics-ML-Model.git/",
   },
   {
     id: 5,
     type: "ML/AI",
-    content: <ProjectAdderDiv staticImg={img} gifOrVid={moodViewGif} />,
-    desc: "hihihi",
-    gitLink: "",
+    content: (
+      <ProjectAdderDiv staticImg={moodview_static} gifOrVid={moodViewGif} />
+    ),
+    desc: "MoodView Analytics for indulging in real-time sentiment analysis and elevating Learning Audience engagement to new heights.",
+    gitLink: "https://github.com/Ajayhegde1/MoodViewAnalytics.git",
+    weblink: "https://github.com/Ajayhegde1/MoodViewAnalytics.git",
   },
   {
     id: 6,
     type: "ML/AI",
-    content: <ProjectAdderDiv staticImg={img} gifOrVid={moodViewGif} />,
-    desc: "hihihi",
+    content: <ProjectAdderDiv staticImg={dis_static} gifOrVid={disPredGif} />,
+    desc: "Yolo v5 model for feature extraction and disease prediction and detection capabalities",
     gitLink: "",
+    weblink: "",
   },
   {
     id: 7,
-    type: "ML/AI",
-    content: <ProjectAdderDiv staticImg={img} gifOrVid={moodViewGif} />,
-    desc: "hihihi",
+    type: "IOT",
+    content: <ProjectAdderDiv staticImg={drone_static} gifOrVid={droneGif} />,
+    desc: " Mobile operated fully Autonomous Drones(Mission Planner's NuttX OS Tweaks) with spot spraying functionality based on locations derived form analytical models",
     gitLink: "",
+    weblink: "",
   },
 ];
