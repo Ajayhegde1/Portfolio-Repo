@@ -1,15 +1,15 @@
 "use client";
 import { useEffect } from "react";
 import HeroBanner from "../Components/HeroBanner";
-import { InfoDiv } from "../Components/InfoDiv";
+
 import { Landing } from "../Components/Landing";
 import ModelCanvas from "../Components/ModelCanvas";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Skills } from "../Components/Skills";
-import { Achievements } from "../Components/Achievements";
+
 import { ScrollExtenderDiv } from "../Components/ScrollExtenderDiv";
-import { Contact } from "../Components/Contact";
+
 import { ContactBackgroundBlur } from "../Components/ContactBackgroundBlur";
 import { Projects } from "../Components/Projects";
 
@@ -39,13 +39,8 @@ export default function Page() {
 
       <Landing />
 
-      {/* <InfoDiv /> */}
-
       <HeroBanner />
       <ScrollExtenderDiv />
-      {/* <Achievements /> */}
-
-      {/* <Landing /> */}
 
       <Skills />
       <Projects />

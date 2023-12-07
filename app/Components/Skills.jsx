@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Achievements } from "./Achievements";
-import { Contact } from "./Contact";
+
 import { motion } from "framer-motion";
 import reactImg from "@/app/assets/sk-11.png";
 import jsImg from "@/app/assets/sk-10.png";
