@@ -15,6 +15,7 @@ import matplotlibImg from "@/app/assets/matplotlib.svg";
 import { gsap } from "gsap";
 import pytochImg from "../assets/pytorch.png";
 import { useEffect } from "react";
+import TooltipComponent from "./TooltipComponent";
 const headerSkillVariants = {
   visible: {
     rotate: [-120, 0],
@@ -99,124 +100,145 @@ export function Skills() {
         {/* <div className="skillHead h-[120px] w-[300px] bg-red-500  mt-[-150px] opacity-0"></div> */}
         {/* LeftDiv */}
         <div className="leftdiv flex flex-col space-y-[35px] pt-[50px]">
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={reactImg}></Image>
-          </motion.div>
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className=" leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={jsImg}></Image>
-          </motion.div>
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={cssImg}></Image>
-          </motion.div>
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={expressImg}></Image>
-          </motion.div>
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={nodeImg}></Image>
-          </motion.div>
+          <TooltipComponent text="React">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={reactImg}></Image>
+            </motion.div>
+          </TooltipComponent>
+          <TooltipComponent text="JavaScript">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className=" leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={jsImg}></Image>
+            </motion.div>
+          </TooltipComponent>
+          <TooltipComponent text="CSS">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={cssImg}></Image>
+            </motion.div>
+          </TooltipComponent>
+          <TooltipComponent text="ExpressJS">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={expressImg}></Image>
+            </motion.div>
+          </TooltipComponent>
+          <TooltipComponent text="NodeJS">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="leftdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={nodeImg}></Image>
+            </motion.div>
+          </TooltipComponent>
         </div>
         {/* CenterDiv */}
         <div className="flex h-[vh] justify-center items-end">
           <Image src={progImg}></Image>
         </div>
         {/* RightDiv */}
+
         <div className="rightdiv flex flex-col space-y-[35px] pt-[50px]">
           {" "}
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={pythonImg}></Image>
-          </motion.div>{" "}
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={mongoImg}></Image>
-          </motion.div>
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={matplotlibImg}></Image>
-          </motion.div>
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={pytochImg}></Image>
-          </motion.div>
-          <motion.div
-            variants={headerSkillVariants}
-            whileInView="visible"
-            whileHover="hover"
-            drag
-            dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
-            dragElastic={0.1}
-            className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
-          >
-            <Image src={nextImg}></Image>
-          </motion.div>
+          <TooltipComponent text="Python">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={pythonImg}></Image>
+            </motion.div>
+          </TooltipComponent>{" "}
+          <TooltipComponent text="MongoDB">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={mongoImg}></Image>
+            </motion.div>
+          </TooltipComponent>
+          <TooltipComponent text="MatPlot Library">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={matplotlibImg}></Image>
+            </motion.div>
+          </TooltipComponent>
+          <TooltipComponent text="PyTorch">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={pytochImg}></Image>
+            </motion.div>
+          </TooltipComponent>
+          <TooltipComponent text="NextJS">
+            <motion.div
+              variants={headerSkillVariants}
+              whileInView="visible"
+              whileHover="hover"
+              drag
+              dragConstraints={{ left: 20, right: 20, top: 20, bottom: 20 }}
+              dragElastic={0.1}
+              className="rightdiv h-[120px] w-[120px] flex justify-center items-center p-[20px] rounded-full border-[1px] shadow-lg shadow-slate-400 bg-white"
+            >
+              <Image src={nextImg}></Image>
+            </motion.div>
+          </TooltipComponent>
         </div>
       </section>
       <section className="h-[150vh] w-screen relative animationHelper"></section>

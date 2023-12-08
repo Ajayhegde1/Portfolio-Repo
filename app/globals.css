@@ -1,7 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
 
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  margin-left: 50px;
+  margin-top: -10px;
+  padding: 8px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity ease 0.3a;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 :root {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;

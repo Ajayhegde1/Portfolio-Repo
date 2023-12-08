@@ -105,25 +105,25 @@ const HeroBanner = () => {
           <ul className="flex 2xl:text-[20px]">
             <li
               className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("about")}
+              // onClick={() => scrollTo("about")}
             >
               About me
             </li>
             <li
               className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("skills")}
+              // onClick={() => scrollTo("skills")}
             >
               Skills
             </li>
             <li
               className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("work")}
+              // onClick={() => scrollTo("work")}
             >
               Work
             </li>
             <li
               className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
-              onClick={() => scrollTo("contact")}
+              // onClick={() => scrollTo("contact")}
             >
               Contact
             </li>
@@ -176,8 +176,9 @@ const HeroBanner = () => {
             <div className="max-w-[510px]">
               {" "}
               A passionate and results-driven Developer with keen interest in
-              Web Development and building AI Models. An eye for detail and a
-              strong commitment to delivering high-quality problem solution.
+              Web Dev and building AI Models. An Entrepreneur in the Drone
+              sector with a strong eye for detail and a strong commitment in
+              delivering high-quality problem solutions.
             </div>
           </div>
         </div>
